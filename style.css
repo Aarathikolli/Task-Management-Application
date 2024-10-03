@@ -1,0 +1,96 @@
+body.light-mode {
+  background-color: #f3e5f5; /* Light lavender background */
+  color: #4a148c; /* Dark purple text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body.dark-mode {
+  background-color: #311b92; /* Darker purple for dark mode */
+  color: #e1bee7; /* Light lavender text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px; /* Add some padding inside the container */
+  border: 2px solid #9c27b0; /* Purple border for light mode */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .container {
+  border: 2px solid #e1bee7; /* Light lavender border for dark mode */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Softer shadow in dark mode */
+}
+
+h1 {
+  text-align: center;
+  color: #8e24aa; /* Medium purple for light mode */
+}
+
+body.dark-mode h1 {
+  color: #e1bee7; /* Light lavender for dark mode */
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  background-color: #e1bee7; /* Light lavender background for inputs */
+  color: #4a148c; /* Dark purple text for input */
+  border: 1px solid #9c27b0; /* Purple border for input */
+}
+
+body.dark-mode input[type="text"] {
+  background-color: #5e35b1; /* Dark lavender background for inputs in dark mode */
+  color: #e1bee7; /* Light text for input in dark mode */
+  border: 1px solid #e1bee7; /* Light lavender border */
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #9c27b0; /* Purple button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ab47bc; /* Lighter purple on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff; /* Light background for table */
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Light gray border for table rows */
+}
+
+th {
+  background-color: #9c27b0; /* Table header color */
+  color: white;
+}
+
+.progress {
+  margin-top: 20px;
+}
+
+#modeSwitch {
+  margin-left: 10px;
+}
